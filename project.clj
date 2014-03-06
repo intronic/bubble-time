@@ -18,7 +18,6 @@
                  [om-sync "0.1.1"]
                  [compojure "1.1.6"]
                  [fogus/ring-edn "0.2.0"]
-                 ;;[com.datomic/datomic-pro "0.9.4578"]
                  [com.datomic/datomic-free "0.9.4578"]
                  [ring-mock "0.1.5"]]
 
@@ -44,7 +43,8 @@
   ;; to start a transactor in the background:-
   ;;   lein datomic start &
   ;; to initialize the dransactor with a schema and initial data
-  :datomic {:schemas ["resources/schema" ["schema.edn"
+  :datomic {:install-location "/Users/mike/work/datomic-free-0.9.4578"
+            :schemas ["resources/schema" ["schema.edn"
                                           "initial-data.edn"]]}
   :profiles {:dev
              {:datomic {:config "resources/free-transactor-template.properties"
