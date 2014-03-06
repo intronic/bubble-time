@@ -19,7 +19,7 @@
                  [compojure "1.1.6"]
                  [fogus/ring-edn "0.2.0"]
                  ;;[com.datomic/datomic-pro "0.9.4578"]
-                 [com.datomic/datomic-free "0.9.4572"]
+                 [com.datomic/datomic-free "0.9.4578"]
                  [ring-mock "0.1.5"]]
 
   :profiles {:dev {:source-paths ["dev"]
