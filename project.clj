@@ -7,6 +7,9 @@
 
   :jvm-opts ^:replace ["-Xmx2g" "-server" "-d64" "-Djava.net.preferIPv4Stack=true"]
 
+  ;; add this to jvm-opts to take up to 3/4 ram
+  ;; ~(str "-Xmx" (* (.getTotalPhysicalMemorySize (java.lang.management.ManagementFactory/getOperatingSystemMXBean)) 3/4))
+
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [org.clojure/clojurescript "0.0-2173"]
                  [ring/ring "1.2.1"]
