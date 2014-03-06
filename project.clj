@@ -8,19 +8,19 @@
   :jvm-opts ^:replace ["-Xmx2g" "-server" "-d64" "-Djava.net.preferIPv4Stack=true"]
 
   :dependencies [[org.clojure/clojure "1.5.1"]
-                 [org.clojure/clojurescript "0.0-2156"]
+                 [org.clojure/clojurescript "0.0-2173"]
                  [ring/ring "1.2.1"]
                  [org.clojure/core.async "0.1.267.0-0d7780-alpha"]
-                 [om "0.5.0"]
+                 [om "0.5.1"]
                  [om-sync "0.1.1"]
                  [compojure "1.1.6"]
                  [fogus/ring-edn "0.2.0"]
-                 [com.datomic/datomic-free "0.9.4532"]
+                 [com.datomic/datomic-free "0.9.4578"]
                  [ring-mock "0.1.5"]]
 
   :profiles {:dev {:source-paths ["dev"]
                    :dependencies [[org.clojure/tools.namespace "0.2.4"]
-                                  [org.clojure/java.classpath "0.2.0"]]}}
+                                  [org.clojure/java.classpath "0.2.2"]]}}
 
   :plugins [[lein-cljsbuild "1.0.2"]]
 
