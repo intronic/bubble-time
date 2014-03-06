@@ -25,7 +25,7 @@
   :plugins [[lein-cljsbuild "1.0.2"]]
 
   :source-paths ["src/clj" "src/cljs"]
-  :resource-paths ["resources"])
+  :resource-paths ["resources"]
 
   :ring {:handler bubble-time.web/handler}
 
@@ -34,4 +34,4 @@
                         :compiler {:output-to "resources/public/js/main.js"
                                    :output-dir "resources/public/js/out"
                                    :optimizations :none
-                                   :source-map true}}]}
+                                   :source-map true}}]})
